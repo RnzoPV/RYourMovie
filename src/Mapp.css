@@ -1,0 +1,192 @@
+*, ::after, ::before, :not(img) {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card-movie {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 193.188px;
+}
+
+.card-movie img {
+    width: 193.188px;
+    height: 292.800px;
+    display: block;
+}
+
+.card-movie div.content {
+    font-size: 1em;
+    padding: 26px 10px 12px 10px;
+}
+
+.card-movie div.content h2 {
+    font-size: 1em;
+}
+
+.card-movie div.content p {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+div.more {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(1, 180, 228);
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 10px auto;
+}
+
+div.more a:hover {
+    color: black;
+}
+
+.container2 {
+    font: 600 1em 'Source Sans Pro', sans-serif;
+    margin: auto;
+    width: 800px;
+    display: flex;
+}
+
+.img-content {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 40%;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-content>img {
+    height: 100%;
+    width: 100%;
+}
+
+.info-content {
+    margin: 20px;
+    width: 60%;
+}
+
+.info-content .head-info {
+    margin-bottom: 20px;
+}
+
+.head-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.head-info a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.review-content {
+    height: 50px;
+}
+
+.container2 div.info-content h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.head-info .info-content span+span {
+    padding-left: 5px;
+}
+
+.info-content p.tagline {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.data-info h3 {
+    margin: 10px 0;
+}
+
+ol.list-crew {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+ol.list-crew li a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: black;
+}
+
+ol.list-crew li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ol.list-crew li p:first-child {
+    padding-top: 20px;
+}
+
+ol.list-crew li p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.rating-stars .stars {
+    display: inline-block;
+}
+
+.icon {
+    display: inline-flex;
+    min-width: 2em;
+    min-height: 2em;
+    background-repeat: no-repeat;
+}
+
+.icon.star-empty {
+    background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-50-star-empty-861c8c182cec172bbddab3aa01bdccd169138232ec09655b23930717985d6e6f.svg');
+}
+
+.icon.start {
+
+    background-image: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-49-star-selected-2e1896f9d89607f6b8ec0285906d4b813e0d957689319c5da760c5a15069c191.svg');
+}
+
+.rating-stars {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.rating-stars .empty-stars {
+    display: block;
+}
+
+.rating-stars .filled-stars {
+    width: 0%;  
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    margin:auto;
+    white-space: nowrap;
+}
